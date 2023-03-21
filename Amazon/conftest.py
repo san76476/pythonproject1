@@ -3,7 +3,7 @@ import pytest
 from selenium import webdriver
 
 
-@pytest.fixture(scope="class")
+@pytest.fixture()
 def setup(request):
     print("initiating chrome driver")
     s = Service("/chrome/chromedriver_win32/chromedriver.exe") #if not added in PATH
